@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #24CE37;
+}
+
+.logo {
+  margin-left: 1em;
+  width: 2.1em;
+}
+/*# sourceMappingURL=style.css.map */

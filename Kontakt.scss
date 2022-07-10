@@ -1,0 +1,420 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+:root{
+    --primary-color: #20ce34;
+    font-size: 100%;
+}
+
+.logo{
+    width: 2em;
+    height: 2.5em;
+    margin-left: 1.5em;
+    margin-top: .2em;
+}
+
+.navBar{
+    // display: flex;
+    // justify-content: space-between;
+    z-index: 999;
+    margin: .5em;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    z-index: 2;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+    
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin-top: 8em;
+    }
+
+    a{
+        color: #20ce34;
+        padding: .75em 2em;
+        display: block;
+        gap: 1em; 
+        width: 100%;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .close{
+        width: 1.7em;
+        float: right;
+        margin: 2em;
+        cursor: pointer;
+    }
+}
+
+.mobile-menu{
+    margin-right: 1.5em;
+    zoom: 110%;
+    cursor: pointer;
+}
+.open-nav{
+    transform: translateX(0);
+}
+
+@media only screen and(min-width: 780px){
+    .mobile-menu, .close{
+        display: none;
+    }
+
+    .navBar .container{
+        text-align: center;
+        display: flex;
+        
+
+        
+
+        nav{
+            padding-left: 50px;
+            display: flex;
+            justify-content: space-between;
+            position: unset;
+            height: auto;
+            width: 100%;
+            transform: translateX(0);
+            margin: 0;
+        }
+
+        ul{
+            margin: 0 auto;
+            display: flex;
+           
+
+        }
+
+        a{
+            color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn{
+            width: 4.8em;
+            padding-right: 0;
+            padding-left: 0;
+            border: #20ce34 1px solid;
+            padding-inline: 1em;
+            border-radius: 3em;
+            color: white;
+            background-color: #20ce34;
+
+            
+
+            
+        }
+        .logo{
+            width: 2em;
+            height: 2.5em;
+        }
+    }
+    
+    
+
+    
+} 
+
+
+@media only screen and(min-width: 1190px){
+    .navBar .container{
+        width: 1190px;
+        margin: 0 auto;
+        
+        
+    }
+
+    
+}
+
+
+.hero{
+    padding-top: 3.5em;
+
+    h1{
+        text-align: center;
+        font-size: 3em;
+        padding-bottom: 1em;
+    }
+    
+    h4{
+        padding-bottom: 1.4em;
+        padding-left: 3em;
+        font-weight: 100;
+    }
+
+    img{
+        display: none;
+    }
+} 
+
+
+
+@media only screen and(min-width: 700px){
+    .hero h4{
+        padding-left: 8em;
+    }
+}
+
+@media only screen and(min-width: 800px){
+    .hero{
+        .container{
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+    }
+    .hero h4{
+        font-size: 1.3em;
+        padding-left: 1.5em;
+    }
+
+    .hero img{
+        width: 20em;
+        display: inline;
+        height: 20em;
+        margin: 0;
+        padding: 0;
+        
+    }
+}
+
+@media only screen and(min-width: 1200px){
+    .hero img{
+        width: 25em;
+        height: 25em;
+    }
+}
+
+
+
+
+.Form{
+    
+    h3{
+        text-align: center;
+        padding: 1em 3em;
+        
+    }
+
+    .formular{
+        width: 30em;
+        background-color: #EBEBEB;
+        display: flex;
+        justify-content: center;
+        border-radius: 1.7em;
+        padding: 1em 0 2em 0;
+        border: 1px solid black;
+        margin: 0 auto;
+        margin-bottom: 3em;
+
+        .lineone{
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+
+            .name{
+                padding-right: 1em;
+                
+            }
+        }
+
+        .linetwo{
+            display: flex;
+            text-align: center;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            justify-content: space-between;
+
+            .mail{
+                padding-right: 1em;
+            }
+        }
+
+        .message{
+            text-align: center;
+
+
+            textarea{
+                border-radius: 3em;
+                padding: 1em;
+            }
+        }
+
+        input[type=text]{
+            border-radius: 1em;
+            outline: none;
+            border: 1px solid black;
+            height: 2.4em;
+            padding-left: .7em;
+        }
+    }
+    .inputos{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 1.4em;
+        
+
+        input[type=submit]{
+            background-color: #2ad13d;
+            outline: none;
+            border: none;
+            padding: .5rem .6rem;
+            border-radius: 1em;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            
+            
+        }    
+    }
+}
+
+@media only screen and(max-width: 400px){
+    .Form .formular{
+        text-align: center;
+        width: 90%;
+
+        .lineone, .linetwo{
+            justify-content: center;
+            padding-bottom: .8em;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        textarea{
+            width: 18em;
+            margin: 0;
+
+            margin: 0 auto;
+        }
+
+        input[type=text]{
+            width: 8em;
+            
+        }
+    }
+}
+
+@media only screen and(max-width: 480px){
+    .Form .formular{
+        width: 90%;
+    }
+}
+
+
+@media only screen and(min-width: 870px){
+    .Form .formular{
+        zoom: 120%;
+    }
+}
+
+@media only screen and(min-width: 1300px){
+    .Form .formular{
+        zoom: 144%;
+    }
+}
+
+
+footer{
+    background: #464646;
+    color: white;
+    padding: 2em 0;
+
+    a{
+        color: white;
+    }
+
+    .container{
+        width: 100%;
+        display: flex;
+        font-size: .7em;
+        position: relative;
+        overflow: auto;
+        justify-content: space-between;
+        
+
+        ul{
+            list-style-type: none;
+            font-weight: lighter;
+            
+            
+        }
+        
+        .footerOne{
+            padding-left: 2em;
+        }
+        
+        .footerThree{
+            padding-right: 2em;
+        }
+
+        .CompanyFooter{
+            padding-bottom: 1em;
+            font-size: 1.3em;
+        }
+
+        .ContactFooter{
+            padding-bottom: 1em;
+            font-size: 1.3em;
+        }
+
+        .AdressFooter{
+            padding-bottom: 1em;
+            font-size: 1.3em;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media only screen and(min-width: 780px){
+    footer .container{
+        width: 780px;
+        margin-inline: auto;
+
+        li{
+            font-size: 1.4em;
+        }
+
+        .ContactFooter, .CompanyFooter, .AdressFooter{
+            font-size: 1.8em;
+        }
+    }
+}  

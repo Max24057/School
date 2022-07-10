@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ekologie.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="navBar">
+        <div class="container">
+            <a href="Homepage.html"><img class="logo" src="img/logo_1.png" alt=""></a>
+
+            <img class="mobile-menu" id="mobile-cta" src="img/menu.svg" alt="">
+            
+            <nav>
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.849 30.849">
+                    <path id="Icon_metro-cross" data-name="Icon metro-cross" d="M33.138,26.711h0l-9.358-9.358,9.358-9.358h0a.966.966,0,0,0,0-1.363L28.717,2.21a.967.967,0,0,0-1.363,0h0L18,11.568,8.637,2.21h0a.966.966,0,0,0-1.363,0L2.852,6.631a.966.966,0,0,0,0,1.363h0l9.358,9.358L2.852,26.711h0a.966.966,0,0,0,0,1.363l4.421,4.421a.966.966,0,0,0,1.363,0h0L18,23.136l9.358,9.358h0a.966.966,0,0,0,1.363,0l4.421-4.421a.966.966,0,0,0,0-1.363Z" transform="translate(-2.571 -1.928)"/>
+                </svg>
+                <ul class="PrimaryNav">
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="Produkty.html">Produkty</a></li>
+                    <li><a href="Stroje.html">Stroje</a></li>
+                    <li><a href="Ekologie.html">Ekologie</a></li>
+                </ul>
+                <a href="Kontakt.html" class="btn">KONTAKT</a>
+            </nav>
+        </div>
+
+        
+
+    </div>
+    <section class="hero">
+        <img class="planet" src="img/Planet.png" alt="">
+        <h1 class="h1">Pro lepší budoucnost</h1>
+    </section>
+    <section class="Fact" data-aos="fade-up">
+        <div class="trashcan">
+            <h2 data-aos="flip-up">Zajímavost</h2>
+            <p data-aos="flip-up">
+                Éra jednorázových plastů ve 27 členských státech 
+                Evropské unie se pomalu, ale jistě chýlí ke konci.
+                Celá řada produktů, které jsme běžně a někdy i 
+                každodenně užívali, už nebude k dostání nebo je 
+                čeká významná změna a různé druhy omezení. 
+                Důvodů pro razantní omezení v rámci produkce 
+                plastového zboží na jedno použití je několik, 
+                problematická je především značná ekologická zátěž. 
+            </p>
+        </div>
+        <img data-aos="flip-up" src="img/Ecology fact.jpg" alt="">
+    </section>
+    <section class="Plastic" data-aos="fade-up">
+        
+        <h1 data-aos="flip-up">
+            PLASTY
+        </h1>
+        <p data-aos="flip-up">
+            Éra jednorázových plastů ve 27 členských státech
+            Evropské unie se pomalu, ale jistě chýlí ke konci.
+            Celá řada produktů, které jsme běžně a někdy i 
+            každodenně užívali, už nebude k dostání nebo je čeká
+            významná změna a různé druhy omezení. Důvodů
+            pro razantní omezení v rámci produkce plastového z
+            boží na jedno použití je několik, problematická je pře
+            devším značná ekologická zátěž. 
+        </p>
+    </section>
+    <section class="Solution">
+        <div class="trashcan">
+            <h2 data-aos="flip-up">Řešení</h2>
+            <p data-aos="flip-up">Konec plastů. Co bude budoucí řešení? Papír je recyklovatelný, rychleji
+                se rozkládá, je zdravotně nezávadný a nemusí se tolik spoléhat na 
+                neobnovitelné zdroje. Papír při správné recyklaci má nízkou uhlíkovou 
+                stopu. Papír je tu stovky let a v dnešní době zažívá inovace, které tu 
+                dříve ještě nebyly. </p> <br>
+        </div>        
+            <img data-aos="flip-up" src="img/Solution ecology.jpg" alt="">
+    </section>
+    <footer data-aos="fade-up">
+        <div data-aos="flip-up" class="container">
+            <ul  class="footerOne">
+                <li class="CompanyFooter"></li>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Produkty.html">Produkty</a></li>
+                <li><a href="Stroje.html">Stroje</a></li>
+                <li><a href="Ekologie.html">Ekologie</a></li>
+            </ul>
+
+            <ul data-aos="flip-up" class="footerTwo">
+                <li class="ContactFooter">Kontakt</li>
+                <li>+420 605 553 575</li>
+                <li>privarovacky@gmail.com</li>
+                <li><a href="Kontakt.html">Poslat dotaz</a></li>
+            </ul>
+
+            <ul data-aos="flip-up" class="footerThree">
+                <li class="AdressFooter">Adresa</li>
+                <li>Czech Republic</li>
+                <li>Hustopeče nad Bečvou</li>
+                <li>Dlouhá 87</li>
+                <li>75366</li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+
+        gsap.from('.logo', {duration: .9, opacity: 0, y: -50, delay: .3})
+        gsap.from('.mobile-menu', {duration: .9, opacity: 0, y: -50, delay: .3})
+        gsap.from('.PrimaryNav', {duration: .9, opacity: 0, y: -50, delay: .3})
+        gsap.from('.btn', {duration: .9, opacity: 0, y: -50, delay: .3})
+        gsap.from('.planet', {duration: .9, opacity: 0, y: -50, delay: .6})
+        gsap.from('.h1', {duration: .9, opacity: 0, x: -50, delay: .9})
+        
+        const menu = document.querySelector('.mobile-menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+
+    </script> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
